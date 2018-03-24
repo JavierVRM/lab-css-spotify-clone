@@ -11,41 +11,40 @@ White: #FFF
     padding: 0;
     font-family: Helvetica, sans-serif;
     font-weight: lighter;
+    box-sizing: border-box;
+    
 }
-
 nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
+    height: 90px;
     background-color: white;
-    padding: 20px 0 20px 40px;
+    padding: 20px 40px;
+}
+#nav-txt {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    font-size: 22px;
+    color: #4c4c4c; 
 }
 img#nav-img {
-    width: 15%;
+   height: 100%;
 }
-ul#nav-ul {
-    list-style-type: none;
-    float: right;
-    width: 40%;
-    margin-top: 1.5%;
-    color: #4c4c4c;
-}
-ul li {
-    display: inline;
-    margin-left: 24px;
-    font-size: 22px;
-}
-
 header {
     width: 100%;
-    height: 600px;
+    height: 800px;
     background-image: url(../images/landing.jpg);
     background-size: cover;
-    padding-top: 20%;
+    padding-top: 18%;
 }
 #header-txt {
     width: 60%;
     margin: 0 auto;
-    color: white;
     text-align: center;
+    color: white;
 }
 h1  {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -78,10 +77,15 @@ h3 {
     margin-top: 10px;
     margin-bottom: 70px;
 }
+#juan-container {
+    display: flex;
+}
 .juan-third {
     width: 33%;
     text-align: center;
-    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .juan-third img {
     height: 100px;
@@ -102,33 +106,36 @@ h3 {
     padding: 0 100px;
 }
 footer {
-    width: 85%;
-    padding: 70px;
+    width: 92%;
+    padding: 80px 90px;
     margin: 0 auto;
-    height: 700px;
+    margin-bottom: 4%;
+    height: 800px;
     background: #00B172 url(../images/spotify-icon-white.png);
     background-repeat: no-repeat;
-    background-size: 100px;
+    background-size: 125px;
     background-position: center;
     color: white;
 }
 footer h5 {
-    font-size: 30px;
+    font-size: 34px;
     font-weight: bold;
 }
 footer h6 {
     font-size: 26px;
     font-weight: bold;
-    margin-top: 45px;
-    margin-bottom: 25px;
+    margin: 40px 0;
+    width: 0%;
 }
 footer p {
     font-size: 22px;
     font-weight: lighter;
     line-height: 30px;
+    width: 75%;
 }
 #footer-txt {
-    width: 40%;
+    width: 50%;
+    height: 100%;
 }
 #footer-txt hr {
     width: 82%;
@@ -140,3 +147,12 @@ footer p {
 #footer-inner-txt {
     width: 80%;
 }
+#footer-img {
+    float: right;
+    margin-top: -600px;
+}
+#footer-img img {
+    float: right;
+    width: 51%;
+}
+
